@@ -7,12 +7,12 @@ const AllSectionCards = () => {
 
 
     return (
-        <div className='flex flex-col justify-center items-center mx-20 mt-20'>
+        <div className='flex flex-col justify-center items-center mx-5 lg:mx-20 mt-20'>
             <div>
-                <h1 className='text-4xl font-bold  text-[#30445C] text-center' >Increase organic <span className='text-[#F87D5E] mr-2' >website traffic</span>
+                <h1 className='text-xl lg:text-4xl font-bold  text-[#30445C] text-center' >Increase organic <span className='text-[#F87D5E] mr-2' >website traffic</span>
                     <br /> and enhance your business web presence</h1>
             </div>
-            <div className='grid grid-cols-3 justify-center items-center mt-10 gap-5'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 justify-center items-center mt-10 gap-2 lg:gap-5'>
                 <div className='border p-14 hover:shadow-gray-400 hover:shadow-2xl'>
                     <div>
                         <img src={seo} alt="" />

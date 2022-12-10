@@ -7,7 +7,7 @@ const LatestPost = () => {
     const { data: limitblogs = [] } = useQuery({
         queryKey: ['limitblogs'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/limitblogs');
+            const res = await fetch('https://server-tau-gules.vercel.app/limitblogs');
             const data = await res.json();
             return data;
         }

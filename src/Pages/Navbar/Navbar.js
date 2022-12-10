@@ -35,7 +35,7 @@ const Navbar = () => {
                         {navigation}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl"><img src={logo} alt="" /></Link>
+                <Link to='/' className='w-28 lg:w-auto' ><img src={logo} alt="" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
@@ -45,10 +45,10 @@ const Navbar = () => {
 
 
             <div className="navbar-end">
-                <p className='mr-3 font-bold flex items-center' > <span className='text-xl text-[#F87D5E] mr-2' ><BsFillTelephoneFill></BsFillTelephoneFill></span> +91 98712 32887</p>
+                <p className='mr-3 font-bold items-center hidden  md:flex' > <span className='text-xl text-[#F87D5E] mr-2' ><BsFillTelephoneFill></BsFillTelephoneFill></span> +91 98712 32887</p>
                 <Link> <PrimaryButton>Get A Proposal</PrimaryButton> </Link>
             </div>
-        </div>
+        </div >
     );
 };
 

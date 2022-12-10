@@ -8,7 +8,7 @@ const LeftBlogs = () => {
     const { data: blogs = [] } = useQuery({
         queryKey: ['blogs'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/blogs');
+            const res = await fetch('https://server-tau-gules.vercel.app/blogs');
             const data = await res.json();
             return data;
         }
@@ -18,7 +18,7 @@ const LeftBlogs = () => {
 
     return (
         <div className='flex justify-center items-center' >
-            <div className='grid grid-cols-2  gap-5' >
+            <div className='grid grid-cols-1 lg:grid-cols-2  gap-5' >
                 {
                     blogs.map(blog => <SingleBlogs blog={blog} key={blog._id} ></SingleBlogs>)
                 }
